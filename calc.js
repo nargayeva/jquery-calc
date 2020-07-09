@@ -33,18 +33,20 @@ $(function () {
             currentEntry = "";
             array.push(operation);
             $(".sign").prop("disabled",true);
+            $("#calc-history").text(array.join(" ").toString());
         }
 
         else if(buttonClicked == "%") { currentEntry = currentEntry / 100; }
         else if(buttonClicked == "=") {
             array.push(currentEntry);
+            $("#calc-history").text(array.join(" ").toString());
+            while(array.length) {array.pop();}
             currentEntry = operate(prevEntry, currentEntry, operation);
-            operation = "";
+
         }
 
         displayRes(currentEntry);
-        $("#calc-history").html(array.join(" ").toString());
-        console.log(array);
+
     });
 
 
