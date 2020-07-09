@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Math Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0850dab536.js"></script>
+    <script src="https://use.fontawesome.com/4291be57d3.js"></script>
+
+</head>
+<body>
+
+    <div id="calc-container">
+        <div id="calc-screen">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round">
+                    <i class="fa fa-sun-o" aria-hidden="true" style="font-size:10px; position:relative; top:7.5px; left:7.5px; display:block; color: #555A60"></i>
+                    <i class="fa fa-moon-o" aria-hidden="true" style="font-size:10px; position:relative; top:20px; left:7.5px; display:block; color: #F4AB41;"></i>
+                </span>
+            </label>
+
+                <div id="calc-result"></div>
+                <div id="calc-history"></div>
+        </div>
+
+        <div id="calc-buttons">
+            <button id="ac" class = "buttons">AC</button>
+            <button class = "buttons">+/-</button>
+            <button class = "buttons">%</button>
+            <button class = "buttons sign">&#247;</button>
+            <button class = "buttons digits">7</button>
+            <button class = "buttons digits">8</button>
+            <button class = "buttons digits">9</button>
+            <button class = "buttons sign">&times;</button>
+            <button class = "buttons digits">4</button>
+            <button class = "buttons digits">5</button>
+            <button class = "buttons digits">6</button>
+            <button class = "buttons sign">-</button>
+            <button class = "buttons digits">1</button>
+            <button class = "buttons digits">2</button>
+            <button class = "buttons digits">3</button>
+            <button class = "buttons sign">+</button>
+            <button class = "buttons digits">0</button>
+            <button class = "buttons">.</button>
+            <button class = "buttons sign" id = "equal-sign">=</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="calc.js"></script>
+
+
+</body>
+</html>
